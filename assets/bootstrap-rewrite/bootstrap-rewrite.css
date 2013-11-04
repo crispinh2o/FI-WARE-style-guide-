@@ -381,6 +381,10 @@ border-radius: 3px;
   line-height: 2;
 }
 
+/** line 3772 boostrap.css**/
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #002D67;
+}
 
 /** line 3826 boostrap.css**/
 .navbar .divider-vertical {
@@ -520,10 +524,6 @@ color: #002D67;
 border-bottom: 1px solid #60C1CF;
 }
 
-/** line 5557 boostrap.css**/
-.thumbnail {
-  min-height: 260px;
-}
 /** line 5582 boostrap.css**/
 .thumbnail > img {
 height: 80px;
