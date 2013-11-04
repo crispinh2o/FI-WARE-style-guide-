@@ -19,6 +19,13 @@
     <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
 
+    <!-- addons styles -->
+   
+    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/addons/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
+
+
 
 <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
@@ -29,7 +36,8 @@
 
 
   <head>
-<div id="wrap">
+  <body class="identity-guide" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+<div id="wordpress">
 
 
 
@@ -58,7 +66,7 @@
               <li><a href="javascript.html">Javascript</a></li>
               <li><a href="identity-guide.html">Identity</a></li>
               <li class="active"><a href="#">Wordpress</a></li>
-              <li><a href="extras_backstretch.html">Addons</a></li>
+              <li><a href="addons.html">Addons</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -84,11 +92,12 @@
           <li><a href="#template-wp"><i class="icon-chevron-right"></i> Template</a></li>
           <li><a href="#css-wp"><i class="icon-chevron-right"></i> Css</a></li>
           <li><a href="#install-wp"><i class="icon-chevron-right"></i> Install</a></li>
+          <li><a href="#posts-wp"><i class="icon-chevron-right"></i> Posts</a></li>
+          <li><a href="#twitter-wp"><i class="icon-chevron-right"></i> Twitter timeline</a></li>
           <li><a href="#examples-wp"><i class="icon-chevron-right"></i> Examples</a></li>
         </ul>
       </div>
       <div class="span9">
-
   <!-- File structure
         ================================================== -->
         <section id="template-wp">
@@ -152,7 +161,32 @@
           <div class="page-header">
             <h1>Install</h1>
           </div>
-          <div class="fi-band"></div><h3>1. open your terminal</h3>
+
+          <div class="fi-band"></div><h3>1. First step to install FI-WARE theme.</h3>
+
+
+  
+          <p>Before you can upload a FI-WARE theme, Next you must upload the .ZIP file you just downloaded to your website via the WordPress Dashboard. Log in to wp-admin and click the Appearances > Themes tab. Next click the "Install Themes" button and then click the "Upload" link. Click "Choose File" and locate the .ZIP file you just downloaded and click "Install Now."</p>
+
+          <div class="fi-band"></div><h3>2. Installation on a local server.</h3>
+          <p>If you are an avanced developer you´ll like install WP on a local server for a powerfull control.<a href="http://codex.wordpress.org/Installing_WordPress">Wordpress souport.</a></p>
+ 
+      
+        </section>
+
+
+
+
+<!-- Posts
+        ================================================== -->
+        <section id="posts-wp">
+          <div class="page-header">
+            <h1>Posts</h1>
+          </div>
+          <h2>Rules for a visual unity.</h2>
+          <div class="fi-band"></div><h3>Lead</h3>
+          <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
+          <div class="fi-band"></div><h3>Read more</h3>
           <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
  
       
@@ -160,6 +194,28 @@
 <pre class="prettyprint">
 localhost:~ comming soon$
 </pre>
+
+
+<!-- Twitter timeline
+        ================================================== -->
+        <section id="twitter-wp">
+          <div class="page-header">
+            <h1>Twitter timeline</h1>
+          </div>
+          <h3>You need generate a code from Twitter account.</h3>
+          <p class="lead">How to make it? <a href="http://en.support.wordpress.com/widgets/twitter-timeline-widget/">wordpress support</a></p>
+          <div class="bs-docs-example">
+            <div class="twitter span3">
+              <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/FIware" data-widget-id="378538709693382657">Tweets by @FIware</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+              </script>
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"twitter"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln"><span class="pln">  </span></span><span class="tag"><span class="tag">&lt;a</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">class</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"twitter-timeline"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">data-tweet-limit</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"2"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">href</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"https://twitter.com/FIware"</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"2"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">data-widget-id</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"378538709693382657"</span></span><span class="tag"><span class="tag">&gt;</span></span>Tweets by @FIware</li><li class="L2"><span class="tag"><span class="tag">&lt;/a&gt;</span></span></li><li class="L3"><span class="pln"></span><span class="tag">&lt;script&gt;</span><span class="pln"></span></li><li class="L3"><span class="atn">  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")</li><li class="L4"><span class="tag"><span class="tag">&lt;/script&gt;</span></span></li></pre>    
+ <p><span class="label label-info">Heads up!</span> Any wordpress widget of Twitter time line is more slow.  This is a better solution at the moment.</p>
+        </section>
+
+
 
 <!-- Examples
         ================================================== -->
@@ -175,12 +231,15 @@ localhost:~ comming soon$
 <ul class="thumbnails">
              
               <li class="span3">
+               
                 <div class="thumbnail">
                   <h5 class="ellipsis">Index of FI-LAB</h5>
                   <small>@crispinh2o</small>
-                  <div id="#example-1" class="backstretch">
-                    <img id="#example-1" src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg">
+                  <div class="wp-example1">
+                      <div class="backstretch">
+                      </div>
                   </div>
+                  
                   <div class="caption">
                     <p>We have created here a Youtube video galery with Jquery.js</p>
                     <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg" download="index_FI-LAB.jpg" class="btn btn-primary">download</a> <a href="#example-1" data-toggle="modal" class="btn">See</a></p>
@@ -195,7 +254,10 @@ localhost:~ comming soon$
                   <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg" download="index_FI-LAB.jpg">download image</a></h6>
                 </div>
                 <div class="modal-body">
-                  <img src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg">
+                  <div class="wp-example1">
+                      <div class="backstretch">
+                      </div>
+                  </div>
                 </div>
               </div>
 
@@ -204,8 +266,9 @@ localhost:~ comming soon$
                 <div class="thumbnail">
                   <h5 class="ellipsis">Comments by Admin of FI-LAB</h5>
                   <small>@crispinh2o</small>
-                  <div class="backstretch">
-                    <img id="#example-2" src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg">
+                  <div class="wp-example2">
+                      <div class="backstretch">
+                      </div>
                   </div>
                   <div class="caption">
                     <p>Clean and simple</p>
@@ -221,7 +284,10 @@ localhost:~ comming soon$
               <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg">download image</a></h6>
             </div>
             <div class="modal-body">
-              <img src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg">
+              <div class="wp-example2">
+                      <div class="backstretch">
+                      </div>
+                  </div>
             </div>
           </div>
             
@@ -231,8 +297,9 @@ localhost:~ comming soon$
                 <div class="thumbnail">
                   <h5 class="ellipsis">Post with comment of FI-LAB</h5>
                   <small>@crispinh2o</small>
-                  <div class="backstretch">
-                    <img id="#example-3" src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg">
+                  <div class="wp-example3">
+                      <div class="backstretch">
+                      </div>
                   </div>
                   <div class="caption">
                    
@@ -252,7 +319,10 @@ localhost:~ comming soon$
               </h6>
             </div>
             <div class="modal-body">
-              <img src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg">
+              <div class="wp-example3">
+                      <div class="backstretch">
+                      </div>
+                  </div>
             </div>
           </div>
 
@@ -262,10 +332,13 @@ localhost:~ comming soon$
                 <div class="thumbnail">
                   <h5 class="ellipsis">Post with re-comment of FI-LAB</h5>
                   <small>@crispinh2o</small>
-                  <img src="">
+                  <div class="wp-example4">
+                      <div class="backstretch">
+                      </div>
+                  </div>
                   <div class="caption">
                     <p>with especial close highlight comment</p>
-                    <a id="#example-4" href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_re-comment.jpg" download="post_and_comment.jpg" class="btn btn-primary">download</a> <a href="#example-4" data-toggle="modal" class="btn">See</a></p>
+                    <a id="#example-4" href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_re-comment.jpg" download="post_and_comment.jpg" class="btn btn-primary disabled">download</a> <a href="#example-4" data-toggle="modal" class="btn disabled">See</a></p>
                   </div>
                 </div>
               </li>
@@ -280,7 +353,10 @@ localhost:~ comming soon$
               </h6>
             </div>
             <div class="modal-body">
-              <img src="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg">
+              <div class="wp-example4">
+                      <div class="backstretch">
+                      </div>
+                  </div>
             </div>
           </div>
           
@@ -295,7 +371,7 @@ localhost:~ comming soon$
 
   </div>
 
-<a href="#" class="go-top"><i class="icon-chevron-up icon-white"></i></a>
+<a href="#" class="go-top"><i class="icon-arrow-up icon-2x"></i></a>
 
     <!-- FOOTER -->
       <footer>
@@ -333,9 +409,11 @@ localhost:~ comming soon$
 
     <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
 <script>
-    $("#example-1").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
-    $("#example-2").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
-    $("#example-3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg");
+    $(".wp-example1").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
+    $(".wp-example2").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
+    $(".wp-example3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg");
+    $(".wp-example4").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_re-comment.jpg");
+   
 </script>
 
 

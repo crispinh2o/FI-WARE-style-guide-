@@ -34,6 +34,7 @@ body > .navbar {
 section {
   padding-top: 28px;
   min-height: 193px;
+  clear: both;
 }
 section:first-child {
   padding-top: 0px;
@@ -558,7 +559,6 @@ margin-left: 14px;
 .bs-docs-example > .nav,
 .bs-docs-example blockquote {
   margin-bottom: 5px;
-  background-color: rgba(249, 251, 255, 0.89);
 }
 .bs-docs-example .pagination {
   margin-top: 0;
@@ -733,9 +733,10 @@ form.bs-docs-example {
   display: block;
   width: 190px \9;
   margin: 0 0 -1px;
-  padding: 8px 14px;
+  padding: 2px 20px;
   border: 1px solid #e5e5e5;
   color: #777;
+  font-size: 12px;
 }
 .bs-docs-sidenav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
@@ -750,8 +751,9 @@ form.bs-docs-example {
 .bs-docs-sidenav > .active > a {
   position: relative;
   z-index: 2;
-  padding: 9px 15px;
+  padding: 6px 14px 6px 26px;
   border: 0;
+  font-size: 13px;
   text-shadow: 0 1px 0 rgba(0,0,0,.15);
   -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
      -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
@@ -1091,12 +1093,38 @@ padding-top: 72px;
 
 
 
+.blue-dark-tx{
+  color:#002D67;
+}
+.blue-light-tx{
+  color:#60C1CF;
+}
+.yellow-tx{
+  color: #FFE616;
+}
 
+.blue-dark-bk{
+  background-color: #002D67;
+}
+.blue-light-bk{
+  background-color: #60C1CF;
+}
+.yellow-bk{
+  background-color: #FFE616;
+}
 
-
-
-
-
+.wp-example1{
+  padding-bottom: 93%;
+}
+.wp-example2{
+  padding-bottom: 58%;
+}
+.wp-example3{
+  padding-bottom: 75%;
+}
+.wp-example4{
+  padding-bottom: 48%;
+}
 
 
 
@@ -1124,17 +1152,44 @@ a:hover{
 left: 94%;
 position: fixed;
 bottom: 10px;
-width: 32px;
+width: 36px;
 height: 32px;
 background: #60C1CF;
 -moz-border-radius: 70px;
 -webkit-border-radius: 70px;
 border-radius: 70px;
 z-index: 666;
+padding-top: 4px;
+-moz-opacity:.5;
+-webkit-opacity:.5;
+opacity:.5;
 }
-.go-top .icon-chevron-up {
-margin: 8px 10px;
+.go-top:hover {
+  text-decoration: none;
+-moz-opacity:1;
+-webkit-opacity:1;
+opacity:1;
 }
+.go-top .icon-2x {
+color: #FcFcFc;
+text-align: center;
+padding-left: 6px;
+font-size: 26px;
+}
+
+
+.label-bligth, .badge-bligth {
+background-color: #60C1CF;
+}
+.label-bdark, .badge-bdark {
+background-color: #002D67;
+}
+.label-yellow, .badge-yellow {
+background-color: #FFE616;
+color: #444;
+text-shadow: 0 1px 0 #fff;
+}
+
 
 .handwrite{
   font-family: "DesyrelRegular"; 
@@ -1357,10 +1412,6 @@ padding: 0px 0px 3px;
 line-height: 60px;
 }
 
-.bs-docs-sidenav > li > a {
-font-size: 13px;
-}
-
 .wp-image.fade.in {
 top: 1%;
 left: 1%;
@@ -1371,7 +1422,7 @@ margin-left: 0;
 }
 .wp-image.fade.in .modal-body {
 position: relative;
-max-height: 82%;
+max-height: 95%;
 padding: 15px;
 overflow-y: auto;
 }
@@ -1433,8 +1484,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60c1cf', end
 }
 
 
-
-
+#font-awesome h5 i{
+  color: #60C1CF;
+}
+#font-awesome h5 i:hover{
+  font-size: 20px;
+}
+.rating{unicode-bidi:bidi-override;direction:rtl;font-size:30px;}.rating span.star{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block;}.rating span.star:hover{cursor:pointer;}
+.rating span.star:before{content:"\f006";padding-right:5px;color:#999999;}
+.rating span.star:hover:before,.rating span.star:hover~span.star:before{content:"\f005";color:#e3cf7a;}
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
@@ -1612,9 +1670,6 @@ font-size: 26px !important;
 }
 .go-top {
 left: 92%;
--moz-opacity:.5;
--webkit-opacity:.5;
-opacity:.5;
 }
 
     }
@@ -1686,4 +1741,101 @@ font-size: 14px !important;
 .go-top {
 left: 88%;
 }
+}
+
+
+
+/* Add additional stylesheets for backstretch
+-------------------------------------------------- */
+
+#backstretch .backstretch {height: 100px !important;}
+
+#backstretch .thumbnail {min-height: 100px !important;}
+
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: rgba(0, 159, 218, 0.1);
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 14px;
+  font-size: 10px;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+#twitter-wp .bs-docs-example {
+min-height: 382px;
 }

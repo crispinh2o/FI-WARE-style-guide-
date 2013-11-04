@@ -20,6 +20,11 @@
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/select2.css" rel="stylesheet">
 
+    <!-- addons styles -->
+   
+    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/addons/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+
 
 <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
@@ -59,7 +64,7 @@
               <li><a href="javascript.html">Javascript</a></li>
               <li><a href="identity-guide.html">Identity</a></li>
               <li><a href="wordpress.html">Wordpress</a></li>
-              <li><a href="extras_backstretch.html">Addons</a></li>
+              <li><a href="addons.html">Addons</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -116,7 +121,7 @@
           </div>
 
           <h2 id="body-copy">Body copy</h2>
-          <p>FI-WARE style guide global default <code>font-size</code> is <strong>13px</strong>, with a <code>line-height</code> of <strong>19px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs.</p>
+          <p>FI-WARE style guide global default <code>font-size</code> is <strong>13px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs.</p>
           <div class="bs-docs-example">
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -1598,8 +1603,7 @@
             <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
           </ul>
 
-          <div class="fi-band"></div><h3>Glyphicons attribution</h3>
-          <p><a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but an arrangement between FI-WARE style guide and the Glyphicons creators have made this possible at no cost to you as developers. As a thank you, we ask you to include an optional link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever practical.</p>
+          <p><span class="label label-info">Heads up!</span> This is expanded witch <a href="addons.html#font-awesome">Font Awesome</a></p>
 
 
           <hr class="bs-docs-separator">
@@ -1687,6 +1691,7 @@
           </form>
 <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"control-label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"inputIcon"</span><span class="tag">&gt;</span><span class="pln">Email address</span><span class="tag">&lt;/label&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"controls"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-prepend"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"add-on"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-envelope"</span><span class="tag">&gt;&lt;/i&gt;&lt;/span&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span2"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"inputIcon"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
 
+
         </section>
 
 
@@ -1756,14 +1761,12 @@
         </section>
 
 
-
-
       </div>
     </div>
 
   </div>
 
-<a href="#" class="go-top"><i class="icon-chevron-up icon-white"></i></a>
+<a href="#" class="go-top"><i class="icon-arrow-up icon-2x"></i></a>
 
     <!-- FOOTER -->
       <footer>
@@ -1798,6 +1801,11 @@
     <script src="assets/bootstrap/js/prettify.js"></script>
 
     <script src="assets/bootstrap/js/application.js"></script>
+<script src="assets/addons/maxlength/js/bootstrap-maxlength.js"></script>
+    <script>
+    $('textarea#textarea').maxlength({
+            alwaysShow: true
+        });</script>
 
 
 
