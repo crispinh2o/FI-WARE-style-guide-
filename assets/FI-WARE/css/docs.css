@@ -1150,6 +1150,11 @@ text-shadow: 0 1px 0 #FFF;
 
 
 
+.uppercase{
+  text-transform: uppercase;
+}
+
+
 
 /*!
  * Docs for FI-WARE Bootstrap v2.3.2
